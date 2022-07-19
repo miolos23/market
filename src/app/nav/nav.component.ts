@@ -11,7 +11,7 @@ import { LoaderService } from '../loader/loader.service';
 })
 export class NavComponent {
 
-  isDarkTheme: boolean = true;
+  isDarkTheme: boolean = false;
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),
